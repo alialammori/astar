@@ -1,0 +1,16 @@
+{% block content %}
+  {% csrf_token %}
+  <h1>Shortest Path Is</h1>
+<table border="1">
+<tr>
+{% for x in path %}
+
+
+<td>{{ x }}</td>
+ 
+
+{% endfor %}
+</tr>
+</table>
+
+{% endblock %}

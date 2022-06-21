@@ -1,0 +1,45 @@
+<h1 style="color:red"> hossam aljaour:
+hossam_128097</h1>
+<h1 style="color:DodgerBlue;">Ghaith lolo:
+ghaith_121472</h1>
+<h1 style="color:SlateBlue;"> Yosef alkasem:
+yosef_113590</h1>
+<h1 style="color:MediumSeaGreen;"> Abdo kalaweez:
+abdo_150773</h1>
+<div>
+<h1> <a href="fsp/"> Find shortest Path</a></h1>
+</div>
+<div>
+<h1>Members</h1>
+</div>
+<table border="1">
+{% for x in mymembers %}
+<tr>
+<td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+<td>{{ x.firstCity }}</td>
+<td>{{ x.secondCity }}</td>
+<td>{{ x.cost }}</td>
+ <td><a href="delete/{{ x.id }}">delete</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<p>
+<a href="add/">Add member</a>
+</p>
+<h1>heurstic</h1>
+
+<table border="1">
+{% for x in heur %}
+<tr>
+<td><a href="updateher/{{ x.id }}">{{ x.id }}</a></td>
+<td>{{ x.city }}</td>
+<td>{{ x.Hval }}</td>
+ <td><a href="deleteher/{{ x.id }}">delete</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<p>
+<a href="addher/">Add heur</a>
+</p>

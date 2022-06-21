@@ -1,0 +1,15 @@
+<h1>Add member</h1>
+
+<form action="addrecord/" method="post">
+{% csrf_token %}
+First city:<br>
+<input name="first">
+<br><br>
+Second city:<br>
+<input name="second">
+<br><br>
+cost:<br>
+<input name="cost">
+<br><br>
+<input type="submit" value="Submit">
+</form>
